@@ -2,7 +2,7 @@ let table1=document.getElementById('table1');
 let table2=document.getElementById('table2');
 let table3=document.getElementById('table3');
 
-function savetolocal(event){
+function savetoobject(event){
     event.preventDefault();
     let item=document.getElementById('item').value;
     let price=document.getElementById('price').value;
