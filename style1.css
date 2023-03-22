@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .my-3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Form Styles */
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  
+  /* Table Styles */
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+  }
+  
+  ul li span {
+    font-weight: bold;
+  }
+  
+  ul li button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+  }
+  
+  ul li button:hover {
+    background-color: #c82333;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Custom Background Colors */
+  h1,
+  .container {
+    background-color: #fff;
+  }
+  
+  body,
+  ul li {
+    background-color: #f8f9fa;
+  }
+  
