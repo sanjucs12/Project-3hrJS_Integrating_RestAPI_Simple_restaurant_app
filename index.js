@@ -15,7 +15,7 @@ function savetolocal(event){
     }
 
     axios
-    .post('https://crudcrud.com/api/95d73ce19fa849baaf668ff7722b8304/orders',orders)
+    .post('https://crudcrud.com/api/8e0d27976dcd48b58e228459993e5f54/orders',orders)
     .then((response)=>{
         console.log(response)
     })
@@ -29,10 +29,6 @@ function savetolocal(event){
 
 function display(orders){
     
-    let item=document.getElementById('item').value;
-    let price=document.getElementById('price').value;
-    let table=document.getElementById('table').value;
-
 //CREATING LI ELEMENT
     let li=document.createElement('li');
     li.appendChild(document.createTextNode(`Item Name:${orders.item}__________Item Price: ${orders.price}`));
@@ -52,18 +48,18 @@ function display(orders){
     let deletebtn=document.createElement('button');
     deletebtn.innerText='Delete';
     deletebtn.onclick=()=>{
-        if(document.getElementById('table').value==='table1') {
+        if(orders.table==='table1') {
             table1.removeChild(li)
         }
-        if(document.getElementById('table').value==='table2') {
+        if(orders.table==='table2') {
             table2.removeChild(li)
         }
-        if(document.getElementById('table').value==='table3') {
+        if(orders.table==='table3') {
             table3.removeChild(li)
         } 
         
         axios
-        .delete(`https://crudcrud.com/api/95d73ce19fa849baaf668ff7722b8304/orders/${orders._id}`)
+        .delete(`https://crudcrud.com/api/8e0d27976dcd48b58e228459993e5f54/orders/${orders._id}`)
         .then((response)=>{
             console.log(response)
         })
@@ -77,7 +73,7 @@ function display(orders){
 //WHENEVER THE PAGE GETS REFRESHED THERE WILL BE A GET REQUEST
     window.addEventListener('DOMContentLoaded',()=>{
         axios
-        .get('https://crudcrud.com/api/95d73ce19fa849baaf668ff7722b8304/orders')
+        .get('https://crudcrud.com/api/8e0d27976dcd48b58e228459993e5f54/orders')
         .then((response)=>{
             console.log(response)
             for(let i=0; i<response.data.length;i++)
